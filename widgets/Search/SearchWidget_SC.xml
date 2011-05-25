@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<configuration>
+    <layers>
+        <layer>
+            <name>Parcels</name>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/1</url>
+            <expression>PARNO like '[value]'</expression>
+            <textsearchlabel>Search by Parcel ID  [ Example: 2861026900 or 2861%]</textsearchlabel>
+            <titlefield>PARNO</titlefield>
+            <linkfield></linkfield>
+            <fields all="false">
+                <field name="PARNO"/>
+            </fields>
+        </layer>
+    </layers>
+    <zoomscale>10000</zoomscale>
+</configuration>
+
+<!--
+    See Search widget documentation at
+    http://links.esri.com/searchwidget
+-->
