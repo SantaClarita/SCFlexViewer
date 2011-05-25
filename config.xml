@@ -37,9 +37,9 @@
         <basemaps>
             <layer label="Streets" type="tiled" visible="true"
                    url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
-            <!--<layer label="Aerial"  type="tiled" visible="false"
-                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
-            <layer label="Topo"    type="tiled" visible="false"
+            <layer label="Aerial"  type="dynamic" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
+            <!--<layer label="Topo"    type="tiled" visible="false"
                    url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>-->
         </basemaps>
         <operationallayers>
