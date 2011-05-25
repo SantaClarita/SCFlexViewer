@@ -70,7 +70,7 @@
                 url="widgets/Bookmark/BookmarkWidget.swf"/>
         <widget label="Find an address"   left="100" top="90" preload="open"
                 icon="assets/images/i_target.png"
-                config="widgets/Locate/LocateWidget_Bing.xml"
+                config="widgets/Locate/LocateWidget_SantaClarita.xml"
                 url="widgets/Locate/LocateWidget.swf"/>
         <widget label="Louisville Police" left="590" top="280"
                 icon="assets/images/i_police.png"

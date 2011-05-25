@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <configuration>
-    <locator>http://eos2/ArcGIS/rest/services/Address/GeocodeServer</locator>
+    <locator>http://eos2/ArcGIS/rest/services/address_pts_Locator/GeocodeServer</locator>
     <minscore>40</minscore>
     <zoomscale>10000</zoomscale>
 </configuration>
