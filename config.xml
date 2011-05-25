@@ -19,8 +19,8 @@
     <subtitle>a configurable web mapping application</subtitle>
     <logo>assets/images/logo.png</logo>
     <style>
-        <colors>0xFFFFFF,0x333333,0x101010,0x000000,0xFFD700</colors>
-        <alpha>0.8</alpha>
+    	<colors>0xCEE7F4,0x39628C,0x355D89,0x294867,0xCEE7F4</colors>
+    	<alpha>0.8</alpha>
     </style>
     <!-- replace the following url with your own geometryservice -->
     <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
