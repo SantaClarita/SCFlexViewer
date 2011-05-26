@@ -49,7 +49,7 @@
                    url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
         <layer label="Parcels" type="Dynamic" visible="false"
 		   popupconfig="popups/PopUp_Parcels.xml" 
-                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/2"/>
+                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer"/>
 	<layer label="Misc" type="Dynamic" visible="false"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
 	<layer label="Hazard Zones" type="Dynamic" visible="false"
