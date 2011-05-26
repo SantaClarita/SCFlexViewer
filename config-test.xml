@@ -33,15 +33,17 @@
     <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf"/>
 
-    <map initialextent="" fullextent="" top="40">
+    <map initialextent="-13234100 4069400 -13147500 4106000" fullextent="-13234100 4069400 -13147500 4106000" top="40">
         <basemaps>
-            <layer label="Streets" type="tiled" visible="true"
-                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
-            <layer label="Aerial"  type="dynamic" visible="false"
-                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
-            <layer label="Topo"    type="Dynamic" visible="false"
-                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
-        </basemaps>
+        <layer label="Streets" type="tiled" visible="true" alpha="1"
+                  url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
+        <layer label="Aerial" type="tiled" visible="false" alpha="1"
+                  url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
+	<layer label="Topo"    type="tiled" visible="false"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
+
+    </basemaps>
+
         <operationallayers>
 	<layer label="Public Works" type="Dynamic" visible="false"
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
