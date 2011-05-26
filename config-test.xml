@@ -33,7 +33,7 @@
     <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf"/>
 
-    <map initialextent="-13234100 4069400 -13147500 4106000" fullextent="-13234100 4069400 -13147500 4106000" top="40">
+    <map initialextent="-13212600 4076000 -13169300 4094300" fullextent="-13234100 4069400 -13147500 4106000" top="40">
         <basemaps>
         <layer label="Streets" type="tiled" visible="true" alpha="1"
                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
