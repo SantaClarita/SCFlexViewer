@@ -44,13 +44,14 @@
 
     </basemaps>
 
-        <operationallayers>
+                <operationallayers>
 	<layer label="Public Works" type="Dynamic" visible="false"
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
  	<layer label="Planning" type="Dynamic" visible="false"
-                   url="http://eos2/ArcGIS/rest/services/planning/AGS_planning/MapServer"/>
+                   url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
         <layer label="Parcels" type="Dynamic" visible="false"
-                   url="http://eos2/ArcGIS/rest/services/parcel/AGS_parcel/MapServer"/>
+		   popupconfig="popups/PopUp_Parcels.xml" 
+                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer"/>
 	<layer label="Misc" type="Dynamic" visible="false"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
 	<layer label="Hazard Zones" type="Dynamic" visible="false"
@@ -74,7 +75,7 @@
                 icon="assets/images/i_search.png"
                 config="widgets/Search/SearchWidget_SC.xml"
                 url="widgets/Search/SearchWidget.swf"/>
-	<widget label="Legend" left="790" top="280"
+	<widget label="Legend" bottom="20" right="20"
                 icon="assets/images/Legend32.png"
                 config="widgets/Legend/LegendWidget.xml"
                 url="widgets/Legend/LegendWidget.swf"/>
