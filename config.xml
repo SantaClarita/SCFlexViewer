@@ -39,8 +39,8 @@
                    url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
             <layer label="Aerial"  type="dynamic" visible="false"
                    url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
-            <!--<layer label="Topo"    type="tiled" visible="false"
-                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>-->
+            <layer label="Topo"    type="Dynamic" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
         </basemaps>
         <operationallayers>
 	<layer label="Public Works" type="Dynamic" visible="false"
