@@ -15,9 +15,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 -->
 <configuration>
-    <title>ArcGIS Viewer for Flex</title>
-    <subtitle>a configurable web mapping application</subtitle>
-    <logo>assets/images/logo.png</logo>
+    <title>City of Santa Clarita</title>
+    <subtitle>GIS - Web Mapping Application</subtitle>
+    <logo>assets/images/city_seal.png</logo>
     <style>
     	<colors>0xCEE7F4,0x39628C,0x355D89,0x294867,0xCEE7F4</colors>
     	<alpha>0.8</alpha>
