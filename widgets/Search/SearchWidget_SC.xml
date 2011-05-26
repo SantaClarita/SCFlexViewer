@@ -3,13 +3,25 @@
     <layers>
         <layer>
             <name>Parcels</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/1</url>
-            <expression>PARNO like '[value]'</expression>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/2</url>
+            <expression>AIN like '[value]'</expression>
             <textsearchlabel>Search by Parcel ID  [ Example: 2861026900 or 2861%]</textsearchlabel>
-            <titlefield>PARNO</titlefield>
+            <titlefield>AIN</titlefield>
             <linkfield></linkfield>
             <fields all="false">
-                <field name="PARNO"/>
+                <field name="AIN"/>
+            </fields>
+        </layer>
+	<layer>
+            <name>Addresses</name>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/1</url>
+            <expression>ST_NUM like '[value]'</expression>
+            <textsearchlabel>Search by Street Number ... [ Example: 23920 or 2%]</textsearchlabel>
+            <titlefield>ST_NUM</titlefield>
+            <linkfield></linkfield>
+            <fields all="True">
+                <field name="ST_NUM"/>
+		<field name="ST_NAME" Alias="Name"/>
             </fields>
         </layer>
     </layers>
