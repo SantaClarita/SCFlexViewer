@@ -72,7 +72,7 @@
                 icon="assets/images/i_search.png"
                 config="widgets/Search/SearchWidget_SC.xml"
                 url="widgets/Search/SearchWidget.swf"/>
-	<widget label="Legend" left="790" top="280"
+	<widget label="Legend" bottom="20" right="20"
                 icon="assets/images/Legend32.png"
                 config="widgets/Legend/LegendWidget.xml"
                 url="widgets/Legend/LegendWidget.swf"/>
