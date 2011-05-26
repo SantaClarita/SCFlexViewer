@@ -44,23 +44,22 @@
 
     </basemaps>
 
-                <operationallayers>
-	<layer label="Public Works" type="Dynamic" visible="false"
+    	<operationallayers>
+	<layer label="Public Works" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
- 	<layer label="Planning" type="Dynamic" visible="false"
+ 	<layer label="Planning" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
         <layer label="Parcels" type="Dynamic" visible="false"
 		   popupconfig="popups/PopUp_Parcels.xml" 
                    url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer"/>
-	<layer label="Misc" type="Dynamic" visible="false"
+	<layer label="Misc" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
-	<layer label="Hazard Zones" type="Dynamic" visible="false"
+	<layer label="Hazard Zones" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
-	<layer label="FIS" type="Dynamic" visible="false"
+	<layer label="FIS" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
-	<layer label="Administrative" type="Dynamic" visible="false"
+	<layer label="Administrative" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
-            
         </operationallayers>
     </map>
 
