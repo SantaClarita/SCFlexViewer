@@ -23,7 +23,7 @@
     	<alpha>0.8</alpha>
     </style>
     <!-- replace the following url with your own geometryservice -->
-    <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
+    <geometryservice url="http://eos2/ArcGIS/rest/services/Geometry/GeometryServer" />
     <!-- replace the following key with your own Bing key -->
     <bing key="Ahw1due6dkmZg98wUJJYLrVmYlDik4oleCg6hoNqx6l2jFYRToImQH1HfH-asjjH"/>
 
@@ -56,6 +56,8 @@
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
 	<layer label="FIS" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
+	<layer label="Building" type="Dynamic" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_bldg/MapServer"/>	
 	<layer label="Administrative" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
         </operationallayers>
