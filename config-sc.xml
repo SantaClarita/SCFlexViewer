@@ -23,7 +23,7 @@
     	<alpha>0.8</alpha>
     </style>
     <!-- replace the following url with your own geometryservice -->
-    <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
+    <geometryservice url="http://eos2/ArcGIS/rest/services/Geometry/GeometryServer" />
     <!-- replace the following key with your own Bing key -->
     <bing key="Ahw1due6dkmZg98wUJJYLrVmYlDik4oleCg6hoNqx6l2jFYRToImQH1HfH-asjjH"/>
 
@@ -33,18 +33,16 @@
     <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf"/>
 
-    <map initialextent="-13212600 4076000 -13169300 4094300" fullextent="-13234100 4069400 -13147500 4106000" top="40">
+    <map initialextent="" fullextent="" top="40">
         <basemaps>
-        <layer label="Streets" type="tiled" visible="true" alpha="1"
-                  url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
-        <layer label="Aerial" type="tiled" visible="false" alpha="1"
-                  url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
-	<layer label="Topo"    type="tiled" visible="false"
-                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
-
-    </basemaps>
-
-    	<operationallayers>
+            <layer label="Streets" type="tiled" visible="true"
+                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
+            <layer label="Aerial"  type="tiled" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
+            <layer label="Topo"    type="tiled" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
+        </basemaps>
+        <operationallayers>
 	<layer label="Public Works" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
  	<layer label="Planning" type="Dynamic" visible="false" alpha="0.6"
@@ -58,6 +56,8 @@
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
 	<layer label="FIS" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
+	<layer label="Building" type="Dynamic" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_bldg/MapServer"/>	
 	<layer label="Administrative" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
         </operationallayers>
