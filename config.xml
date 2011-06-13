@@ -69,10 +69,28 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
-        <widget label="Find an address"   left="100" top="90" preload="open"
-                icon="assets/images/i_target.png"
-                config="widgets/Locate/LocateWidget_SantaClarita.xml"
-                url="widgets/Locate/LocateWidget.swf"/>
+		<widgetgroup label="Locators">
+			<widget label="Find by APN"   left="100" top="90" preload="open"
+	                icon="assets/images/i_target.png"
+	                config="widgets/Locate/LocateWidget_APN.xml"
+	                url="widgets/Locate/LocateWidget.swf"/>
+        	<widget label="Find an address"   left="100" top="90" preload="open"
+	                icon="assets/images/i_target.png"
+	                config="widgets/Locate/LocateWidget_SantaClarita.xml"
+	                url="widgets/Locate/LocateWidget.swf"/>
+			<widget label="Find by owner"   left="100" top="90" preload="open"
+	                icon="assets/images/i_target.png"
+	                config="widgets/Locate/LocateWidget_Owner.xml"
+	                url="widgets/Locate/LocateWidget.swf"/>
+			<widget label="Find by intersection"   left="100" top="90" preload="open"
+	                icon="assets/images/i_target.png"
+	                config="widgets/Locate/LocateWidget_trnl.xml"
+	                url="widgets/Locate/LocateWidget.swf"/>
+			<widget label="Find by Street Number"   left="100" top="90" preload="open"
+	                icon="assets/images/i_target.png"
+	                config="widgets/Locate/LocateWidget_StreetNum.xml"
+	                url="widgets/Locate/LocateWidget.swf"/>
+		</widgetgroup>		
         <widget label="Search" left="80" top="280"
                 icon="assets/images/i_search.png"
                 config="widgets/Search/SearchWidget_SC.xml"
