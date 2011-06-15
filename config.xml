@@ -59,8 +59,8 @@
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
 	<layer label="FIS" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
-	<layer label="Building" type="Dynamic" visible="false"
-                   url="http://eos2/ArcGIS/rest/services/Parcel/AGS_bldg/MapServer"/>
+	<layer label="Base" type="Dynamic" visible="false"
+                   url="http://eos2/ArcGIS/rest/services/base_maps_noncached/AGS_base/MapServer"/>
 	<layer label="Administrative" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
         </operationallayers>
