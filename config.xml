@@ -74,19 +74,19 @@
 	                icon="assets/images/i_target.png"
 	                config="widgets/Locate/LocateWidget_APN.xml"
 	                url="widgets/Locate/LocateWidget.swf"/>
-        	<widget label="Find an address"   left="100" top="90" preload="open"
+        	<widget label="Find an address"   left="120" top="90" preload="open"
 	                icon="assets/images/i_target.png"
 	                config="widgets/Locate/LocateWidget_SantaClarita.xml"
 	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by owner"   left="100" top="90"
+			<widget label="Find by owner"   left="130" top="90"
 	                icon="assets/images/i_target.png"
 	                config="widgets/Locate/LocateWidget_Owner.xml"
 	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by intersection"   left="100" top="90"
+			<widget label="Find by intersection"   left="140" top="90"
 	                icon="assets/images/i_target.png"
 	                config="widgets/Locate/LocateWidget_trnl.xml"
 	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by Street Number"   left="100" top="90"
+			<widget label="Find by Street Number"   left="150" top="90"
 	                icon="assets/images/i_target.png"
 	                config="widgets/Locate/LocateWidget_StreetNum.xml"
 	                url="widgets/Locate/LocateWidget.swf"/>
