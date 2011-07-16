@@ -48,7 +48,7 @@
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
  	<layer label="Planning" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
-        <layer label="Parcels" type="Dynamic" visible="false"
+        <layer label="Parcels" type="Dynamic" visible="True"
 		   popupconfig="popups/PopUp_Parcels.xml" 
                    url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
 	<layer label="Misc" type="Dynamic" visible="false" alpha="0.6"
