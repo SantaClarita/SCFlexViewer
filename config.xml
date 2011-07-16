@@ -35,7 +35,7 @@
 
     <map initialextent="" fullextent="" top="40">
     <basemaps>
-		<layer label="Streets" type="tiled" visible="True" alpha="1"
+		<layer label="Streets" type="tiled" visible="true" alpha="1"
 			url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
 		<layer label="Aerial" type="tiled" visible="false" alpha="1"
 			url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
@@ -48,7 +48,7 @@
                    url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
  	<layer label="Planning" type="Dynamic" visible="false" alpha="0.6"
                    url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
-        <layer label="Parcels" type="Dynamic" visible="True"
+        <layer label="Parcels" type="Dynamic" visible="true"
 		   popupconfig="popups/PopUp_Parcels.xml" 
                    url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
 	<layer label="Misc" type="Dynamic" visible="false" alpha="0.6"
@@ -67,29 +67,11 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
-		<widgetgroup label="Locators">
-			<widget label="Find by APN"   left="100" top="90"
-	                icon="assets/images/i_target.png"
-	                config="widgets/Locate/LocateWidget_APN.xml"
-	                url="widgets/Locate/LocateWidget.swf"/>
-        	<widget label="Find an address"   left="120" top="90" preload="open"
-	                icon="assets/images/i_target.png"
-	                config="widgets/Locate/LocateWidget_SantaClarita.xml"
-	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by owner"   left="130" top="90"
-	                icon="assets/images/i_target.png"
-	                config="widgets/Locate/LocateWidget_Owner.xml"
-	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by intersection"   left="140" top="90"
-	                icon="assets/images/i_target.png"
-	                config="widgets/Locate/LocateWidget_trnl.xml"
-	                url="widgets/Locate/LocateWidget.swf"/>
-			<widget label="Find by Street Number"   left="150" top="90"
-	                icon="assets/images/i_target.png"
-	                config="widgets/Locate/LocateWidget_StreetNum.xml"
-	                url="widgets/Locate/LocateWidget.swf"/>
-		</widgetgroup>		
-        <widget label="Search" left="80" top="280"
+		<widget label="Find by intersection"   left="140" top="90"
+			icon="assets/images/i_target.png"
+			config="widgets/Locate/LocateWidget_trnl.xml"
+			url="widgets/Locate/LocateWidget.swf"/>
+		<widget label="Search" left="80" top="280"
                 icon="assets/images/i_search.png"
                 config="widgets/Search/SearchWidget_SC.xml"
                 url="widgets/Search/SearchWidget.swf"/>
