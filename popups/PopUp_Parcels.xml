@@ -2,30 +2,45 @@
 <configuration>
     <title>{AIN}</title>
     <fields>
-        <field name="ASSRDATA_M" visible="true"/>
-		<field name="PERIMETER" visible="true"/>
-		<field name="PHASE" visible="true"/>
-		<field name="LOT" visible="true"/>
-		<field name="UNIT" visible="true"/>
-		<field name="MOVED"visible="true"/> 
-		<field name="TRA" visible="true"/> 
-		<field name="PCLTYPE" visible="true"/> 
-		<field name="SUBDTYPE" visible="true"/>
-		<field name="TRACT" visible="true"/> 
-		<field name="USECODE" visible="true"/> 
-		<field name="BLOCK" visible="true"/> 
-		<field name="UDATE" visible="true"/> 
-		<field name="EDITORNAME" visible="true"/> 
-		<field name="PARCEL_TYP" visible="true"/>
-		<field name="UNIT_NO" visible="true"/> 
-		<field name="PM_REF" visible="true"/>
-		<field name="TOT_UNITS" visible="true"/>
-		<field name="JURIS" visible="true"/>
+		<field name="OWNER" Alias="Owner" visible="true"/> 
+		<field name="ALLADD" Alias="Address" visible="true"/>
+		<field name="SITEZIPCOD" visible="true"/>
 		<field name="APN" visible="true"/>
-		<field name="MAPBOOK" visible="true"/> 
-		<field name="ACRES" visible="true"/> 
-		<field name="HECTARES" visible="true"/> 
-    </fields>
+		<field name="LUSE" Alias="Land Use (Per Assessor)" visible="true"/>
+		<field name="TUNITS" Alias="Total Units (Per Assessor)" visible="true"/>
+	    <field name="YEAR" Alias="Year Built (Per Accessor)" visible="true"/>
+		<field name="TRACTNO" Alias="Tract" visible="true"/>
+		<field name="HOUSEMAP_" Alias="House Numbering Map"visible="true"/>
+		<field name="MAPBOOK_" Alias="Thomas Map Book" visible="true"/>
+		<field name="XSTREET" Alias="Cross Street" visible="true"/>
+		<field name="JURIS" Alias="Jurisdiction" visible="true"/>
+		<field name="COUNTYAREA" Alias="County Area" visible="true"/> 
+		<field name="COMP_DATE" Alias="Annexation Date" visible="true"/>
+		<field name="WATER" Alias="Water Purveyor" visible="true"/> 
+		<field name="OAK" Alias="Oak Trees on Property?" visible="true"/>
+		<field name="EZONE" Alias="Enterprise Zone" visible="true"/>
+		<field name="PROACTIVE" Alias="Proactive Enforcement" visible="true"/>
+		<field name="SSD" Alias="Special Standards District" visible="true"/>
+		<field name="SCHOOL" Alias="Within 1000ft of school" visible="true"/>
+		<field name="BTDISTRICT" Alias="B&T District" visible="true"/>
+		<field name="ZONING" Alias="Zoning" visible="true"/>
+		<field name="FLOODZONE"  Alias="Flood Zone" visible="true"/> 
+		<field name="SEWERMAPBK" Alias="Sewer Map Book" visible="true"/>
+		<field name="DISTRICT" visible="true"/><field name="LOTNO" visible="true"/>
+		<field name="PARENT" visible="true"/>
+		<field name="AREA_FEET" visible="true"/>
+		<field name="PERIMETER_" visible="true"/>
+		<field name="ACRES" visible="true"/>
+		<field name="HECTARES" visible="true"/>
+		<field name="ZONE_CODE" visible="true"/>
+		<field name="BNT" visible="true"/>
+		<field name="GPCCODE" visible="true"/>
+		<field name="OVOV2" visible="true"/>
+		<field name="BNS" visible="true"/>
+		<field name="BNSSUB" visible="true"/> 
+		<field name="BICD" visible="true"/>
+		<field name="CENSUS" visible="true"/>
+	</fields>
 </configuration>
 
 <!--
