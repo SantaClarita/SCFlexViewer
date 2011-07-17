@@ -48,8 +48,6 @@
 		</basemaps>
 
 	    <operationallayers>
-		<layer label="Topographic" type="dynamic" visible="false" alpha="1"
-						url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
 		<layer label="Public Works" type="Dynamic" visible="false" alpha="0.7"
 				url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
 	 	<layer label="Planning" type="Dynamic" visible="false" alpha="0.7"
