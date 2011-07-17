@@ -3,36 +3,52 @@
     <layers>
         <layer>
             <name>Parcels</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/2</url>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
             <expression>AIN like '[value]'</expression>
             <textsearchlabel>Search by Parcel ID  [ Example: 2861026900 or 2861%]</textsearchlabel>
             <titlefield>AIN</titlefield>
             <linkfield></linkfield>
             <fields all="false">
                 <field name="AIN"/>
+				<field name="STREETNO" Alias=""/>
+				<field name="STREETNAME" Alias="Street"/>
             </fields>
-        </layer>
-	<layer>
+    	</layer>
+		<layer>
             <name>Address</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/1</url>
-            <expression>ST_NUM like '[value]'</expression>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+            <expression>STREETNO like '[value]'</expression>
             <textsearchlabel>Search by Street Number ... [ Example: 23920 or 239%]</textsearchlabel>
-            <titlefield>ST_NUM</titlefield>
+            <titlefield>STREETNO</titlefield>
             <linkfield></linkfield>
             <fields all="True">
-                <field name="ST_NUM"/>
-		<field name="ST_NAME" Alias="Name"/>
+                <field name="STREETNO" Alias=""/>
+				<field name="STREETNAME" Alias="Name"/>
             </fields>
         </layer>
-	<layer>
+		<layer>
+	            <name>Owner</name>
+	            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+	            <expression>OWNER like '[value]%'</expression>
+	            <textsearchlabel>Search by Owner ... [ Example: Santa Clarita ]</textsearchlabel>
+	            <titlefield>OWNER</titlefield>
+	            <linkfield></linkfield>
+	            <fields all="True">
+			        <field name="OWNER" Alias=""/>
+	                <field name="STREETNO" Alias=""/>
+					<field name="STREETNAME" Alias="Street"/>
+	            </fields>
+	    </layer>
+		<layer>
             <name>Tract Number</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel/MapServer/2</url>
-            <expression>TRACT like '[value]'</expression>
+            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+            <expression>TRACTNO like '[value]'</expression>
             <textsearchlabel>Search by Tract ... [ Example: 33746 or 337%]</textsearchlabel>
-            <titlefield>TRACT</titlefield>
+            <titlefield>TRACTNO</titlefield>
             <linkfield></linkfield>
             <fields all="false">
-                <field name="TRACT"/>
+                <field name="TRACTNO"/>
+				<field name="AIN"/>
             </fields>
         </layer>
     </layers>
