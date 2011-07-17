@@ -1,15 +1,36 @@
 <?xml version="1.0" ?>
 <configuration>
-    <title>{type}</title>
+    <title>{AIN}</title>
     <fields>
-        <field name="AIN"/>
-        <field name="LOT" alias="Description" visible="true"/>
+        <field name="ASSRDATA_M" visible="true"/>
+		<field name="PERIMETER" visible="true"/>
+		<field name="PHASE" visible="true"/>
+		<field name="LOT" visible="true"/>
+		<field name="UNIT" visible="true"/>
+		<field name="MOVED"visible="true"/> 
+		<field name="TRA" visible="true"/> 
+		<field name="PCLTYPE" visible="true"/> 
+		<field name="SUBDTYPE" visible="true"/>
+		<field name="TRACT" visible="true"/> 
+		<field name="USECODE" visible="true"/> 
+		<field name="BLOCK" visible="true"/> 
+		<field name="UDATE" visible="true"/> 
+		<field name="EDITORNAME" visible="true"/> 
+		<field name="PARCEL_TYP" visible="true"/>
+		<field name="UNIT_NO" visible="true"/> 
+		<field name="PM_REF" visible="true"/>
+		<field name="TOT_UNITS" visible="true"/>
+		<field name="JURIS" visible="true"/>
+		<field name="APN" visible="true"/>
+		<field name="MAPBOOK" visible="true"/> 
+		<field name="ACRES" visible="true"/> 
+		<field name="HECTARES" visible="true"/> 
     </fields>
 </configuration>
 
 <!--
     Pop-up configuration file for:
-    http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Fire/Sheep/FeatureServer/0
+    http://http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1
 
     See pop-up documentation at
     http://links.esri.com/flexviewer/popups

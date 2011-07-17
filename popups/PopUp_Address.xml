@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>{PARNO}</title>
+    <fields>
+        <field name="ST_NUM" visible="true"/>
+		<field name="ST_PREFIX" visible="true"/>
+		<field name="ST_NAME" visible="true"/>
+		<field name="FULL_STNAM" visible="true"/>
+		<field name="UNIT" visible="true"/>
+		<field name="BLDG_ADRES"visible="true"/> 
+		<field name="JURIS" visible="true"/> 
+		<field name="NAME" visible="true"/> 
+		<field name="ZIPCODE" visible="true"/>
+		<field name="OCC_TYPE" visible="true"/> 
+    </fields>
+</configuration>
+
+<!--
+    Pop-up configuration file for:
+    http://http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1
+
+    See pop-up documentation at
+    http://links.esri.com/flexviewer/popups
+-->
