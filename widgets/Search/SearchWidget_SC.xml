@@ -10,8 +10,7 @@
             <linkfield></linkfield>
             <fields all="false">
                 <field name="AIN"/>
-				<field name="STREETNO" Alias=""/>
-				<field name="STREETNAME" Alias="Street"/>
+				<field name="ALLADD" Alias=""/>
             </fields>
     	</layer>
 		<layer>
@@ -22,8 +21,7 @@
             <titlefield>STREETNO</titlefield>
             <linkfield></linkfield>
             <fields all="True">
-                <field name="STREETNO" Alias=""/>
-				<field name="STREETNAME" Alias="Name"/>
+                <field name="ALLADD" Alias=""/>
             </fields>
         </layer>
 		<layer>
@@ -35,8 +33,7 @@
 	            <linkfield></linkfield>
 	            <fields all="True">
 			        <field name="OWNER" Alias=""/>
-	                <field name="STREETNO" Alias=""/>
-					<field name="STREETNAME" Alias="Street"/>
+	                <field name="ALLADD" Alias=""/>
 	            </fields>
 	    </layer>
 		<layer>
@@ -49,6 +46,7 @@
             <fields all="false">
                 <field name="TRACTNO"/>
 				<field name="AIN"/>
+				<field name="ALLADD" Alias=""/>
             </fields>
         </layer>
     </layers>
