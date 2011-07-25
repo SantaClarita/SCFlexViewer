@@ -72,6 +72,10 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
+		<widget label="Enhanced Search" left="60" top="400" preload="open"
+		                icon="assets/images/i_search.png"
+		                config="widgets/eSearch/SearchWidget.xml"
+		                url="widgets/eSearch/SearchWidget.swf"/>
 		<widget label="Find by intersection" left="140" top="90"
 			icon="assets/images/i_target.png"
 			config="widgets/Locate/LocateWidget_trnl.xml"
