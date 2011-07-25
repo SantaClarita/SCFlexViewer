@@ -17,8 +17,9 @@
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>AIN</titlefield>
 			 <fields all="false">
-	                <field name="AIN"/>
-					<field name="ALLADD" Alias=""/>
+					<field name="OWNER" gridfield="true"/>
+					<field name="ALLADD" gridfield="true"/>
+					<field name="APN" gridfield="true"/>
 	            </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
@@ -37,8 +38,9 @@
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>ALLADD</titlefield>
 			 <fields all="false">
-	                <field name="AIN"/>
-					<field name="ALLADD" Alias=""/>
+					<field name="OWNER" gridfield="true"/>
+					<field name="ALLADD" gridfield="true"/>
+					<field name="APN" gridfield="true"/>
 	            </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
@@ -57,8 +59,9 @@
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>OWNER</titlefield>
 			 <fields all="false">
-					<field name="OWNER"/>
-					<field name="ALLADD" Alias=""/>
+					<field name="OWNER" gridfield="true"/>
+					<field name="ALLADD" gridfield="true"/>
+					<field name="APN" gridfield="true"/>
 	            </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
@@ -77,9 +80,10 @@
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>TRACTNO</titlefield>
 			 <fields all="false">
-                <field name="TRACTNO"/>
-				<field name="AIN"/>
-				<field name="ALLADD" Alias=""/>
+                <field name="TRACTNO" gridfield="true"/>
+				<field name="OWNER" gridfield="true"/>
+				<field name="ALLADD" gridfield="true"/>
+				<field name="APN" gridfield="true"/>
             </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
@@ -177,7 +181,7 @@
 	<enablebuffergraphicbutton>true</enablebuffergraphicbutton>
 	<selectedgraphicaltool></selectedgraphicaltool><!-- possible values are extent or polygon or mappoint or polyline or nothing -->
 	<multipartgraphicsearch>false</multipartgraphicsearch>
-	<floatorfixed>fixed</floatorfixed><!-- possible values are fixed and float -->
+	<floatorfixed>float</floatorfixed><!-- possible values are fixed and float -->
 	<labels>
 		<addtolerance>Add search tolerance to point selection</addtolerance>
 		<existingdrawgraphicslabel>Use Existing eDraw Widget Graphics</existingdrawgraphicslabel>
