@@ -4,23 +4,46 @@
 -->
 
 <configuration>
-	<layers>
-		<layer>
-			<definitionexpression></definitionexpression>
-			<enableexport>true</enableexport>
-			<name>Parcels</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+  <layers>
+    <layer>
+      <definitionexpression></definitionexpression>
+      <enableexport>true</enableexport>
+      <name>Parcels</name>
+      <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
 			<expressions>
-				<expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]" field="AIN" usedomain="true">AIN like '[value]'</expression>
+        <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]" field="AIN" usedomain="true">AIN like '[value]'</expression>
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select Parcel</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>AIN</titlefield>
-			 <fields all="false">
-					<field name="OWNER" gridfield="true"/>
-					<field name="ALLADD" gridfield="true"/>
-					<field name="APN" gridfield="true"/>
-	            </fields>
+			<titlefield>APN</titlefield>
+			<fields all="false">
+        <field name="OWNER" gridfield="true"/>
+				<field name="ALLADD" gridfield="true"/>
+        <field name="SITEZIPCOD" gridfield="true"/>
+        <field name="APN" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="TUNITS" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="YEAR" gridfield="true"/>
+        <field name="TRACTNO" gridfield="true"/>
+        <field name="HOUSEMAP_" gridfield="true"/>
+        <field name="MAPBOOK_" gridfield="true"/>
+        <field name="XSTREET" gridfield="true"/>
+        <field name="JURIS" gridfield="true"/>
+        <field name="COUNTYAREA" gridfield="true"/>
+        <field name="COMP_DATE" gridfield="true"/>
+        <field name="WATER" gridfield="true"/>
+        <field name="OAK" gridfield="true"/>
+        <field name="EZONE" gridfield="true"/>
+        <field name="PROACTIVE" gridfield="true"/>
+        <field name="SSD" gridfield="true"/>
+        <field name="SCHOOL" gridfield="true"/>
+        <field name="BNT" gridfield="true"/>
+        <field name="ZONE_CODE" gridfield="true"/>
+        <field name="DISTRICT" gridfield="true"/>
+        <field name="FLOODZONE" gridfield="true"/>
+        <field name="SEWERMAPBK" gridfield="true"/>
+      </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
 			<zoomscale usegeometry="true"/>
@@ -32,16 +55,39 @@
 			<name>Address</name>
 	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
 			<expressions>
-				<expression alias="Parcels" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]" field="STREETNO" usedomain="true">STREETNO like '[value]'</expression>
+				<expression alias="STREET_NO" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]" field="STREETNO" usedomain="true">STREETNO like '[value]'</expression>
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select Address</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>ALLADD</titlefield>
-			 <fields all="false">
-					<field name="OWNER" gridfield="true"/>
-					<field name="ALLADD" gridfield="true"/>
-					<field name="APN" gridfield="true"/>
-	            </fields>
+			<fields all="false">
+        <field name="OWNER" gridfield="true"/>
+				<field name="ALLADD" gridfield="true"/>
+        <field name="SITEZIPCOD" gridfield="true"/>
+        <field name="APN" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="TUNITS" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="YEAR" gridfield="true"/>
+        <field name="TRACTNO" gridfield="true"/>
+        <field name="HOUSEMAP_" gridfield="true"/>
+        <field name="MAPBOOK_" gridfield="true"/>
+        <field name="XSTREET" gridfield="true"/>
+        <field name="JURIS" gridfield="true"/>
+        <field name="COUNTYAREA" gridfield="true"/>
+        <field name="COMP_DATE" gridfield="true"/>
+        <field name="WATER" gridfield="true"/>
+        <field name="OAK" gridfield="true"/>
+        <field name="EZONE" gridfield="true"/>
+        <field name="PROACTIVE" gridfield="true"/>
+        <field name="SSD" gridfield="true"/>
+        <field name="SCHOOL" gridfield="true"/>
+        <field name="BNT" gridfield="true"/>
+        <field name="ZONE_CODE" gridfield="true"/>
+        <field name="DISTRICT" gridfield="true"/>
+        <field name="FLOODZONE" gridfield="true"/>
+        <field name="SEWERMAPBK" gridfield="true"/>
+      </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
 			<zoomscale usegeometry="true"/>
@@ -58,11 +104,35 @@
 			<graphicalsearchlabel>Use one of the graphical search tools to select Address</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>OWNER</titlefield>
-			 <fields all="false">
-					<field name="OWNER" gridfield="true"/>
-					<field name="ALLADD" gridfield="true"/>
-					<field name="APN" gridfield="true"/>
-	            </fields>
+      <fields all="false">
+        <field name="OWNER" gridfield="true"/>
+				<field name="ALLADD" gridfield="true"/>
+        <field name="SITEZIPCOD" gridfield="true"/>
+        <field name="APN" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="TUNITS" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="YEAR" gridfield="true"/>
+        <field name="TRACTNO" gridfield="true"/>
+        <field name="HOUSEMAP_" gridfield="true"/>
+        <field name="MAPBOOK_" gridfield="true"/>
+        <field name="XSTREET" gridfield="true"/>
+        <field name="JURIS" gridfield="true"/>
+        <field name="COUNTYAREA" gridfield="true"/>
+        <field name="COMP_DATE" gridfield="true"/>
+        <field name="WATER" gridfield="true"/>
+        <field name="OAK" gridfield="true"/>
+        <field name="EZONE" gridfield="true"/>
+        <field name="PROACTIVE" gridfield="true"/>
+        <field name="SSD" gridfield="true"/>
+        <field name="SCHOOL" gridfield="true"/>
+        <field name="BNT" gridfield="true"/>
+        <field name="ZONE_CODE" gridfield="true"/>
+        <field name="DISTRICT" gridfield="true"/>
+        <field name="FLOODZONE" gridfield="true"/>
+        <field name="SEWERMAPBK" gridfield="true"/>
+
+	    </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
 			<zoomscale usegeometry="true"/>
@@ -80,11 +150,33 @@
 			<spatialsearchlayer>true</spatialsearchlayer>
 			<titlefield>TRACTNO</titlefield>
 			 <fields all="false">
-                <field name="TRACTNO" gridfield="true"/>
-				<field name="OWNER" gridfield="true"/>
+        <field name="OWNER" gridfield="true"/>
 				<field name="ALLADD" gridfield="true"/>
-				<field name="APN" gridfield="true"/>
-            </fields>
+        <field name="SITEZIPCOD" gridfield="true"/>
+        <field name="APN" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="TUNITS" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="YEAR" gridfield="true"/>
+        <field name="TRACTNO" gridfield="true"/>
+        <field name="HOUSEMAP_" gridfield="true"/>
+        <field name="MAPBOOK_" gridfield="true"/>
+        <field name="XSTREET" gridfield="true"/>
+        <field name="JURIS" gridfield="true"/>
+        <field name="COUNTYAREA" gridfield="true"/>
+        <field name="COMP_DATE" gridfield="true"/>
+        <field name="WATER" gridfield="true"/>
+        <field name="OAK" gridfield="true"/>
+        <field name="EZONE" gridfield="true"/>
+        <field name="PROACTIVE" gridfield="true"/>
+        <field name="SSD" gridfield="true"/>
+        <field name="SCHOOL" gridfield="true"/>
+        <field name="BNT" gridfield="true"/>
+        <field name="ZONE_CODE" gridfield="true"/>
+        <field name="DISTRICT" gridfield="true"/>
+        <field name="FLOODZONE" gridfield="true"/>
+        <field name="SEWERMAPBK" gridfield="true"/>
+      </fields>
 			<linkfield></linkfield>
 			<icon isfield="false"></icon>
 			<zoomscale usegeometry="true"/>
@@ -132,12 +224,12 @@
 		</layer>-->
 	</layers>
 	<spatialrelationships>
-		<!-- possible spatial relationships		 
+		<!-- possible spatial relationships
 			esriSpatialRelIntersects | esriSpatialRelContains | esriSpatialRelCrosses | esriSpatialRelEnvelopeIntersects | esriSpatialRelIndexIntersects | esriSpatialRelOverlaps | esriSpatialRelTouches | esriSpatialRelWithin
-			
+
 			currently unavailable:
 				esriSpatialRelRelation
-		-->	
+		-->
 		<spatialrelationship>
 			<name>esriSpatialRelContains</name>
 			<label>entirely contained in</label>
@@ -163,7 +255,7 @@
 		<bufferunit>
 			<name>UNIT_METER</name>
 			<label>Meters</label>
-		</bufferunit>		
+		</bufferunit>
 		<bufferunit>
 			<name>UNIT_KILOMETER</name>
 			<label>Kilometers</label>
@@ -219,7 +311,7 @@
     	</simplefillsymbol>
     	<!-- You can have one or the other, either simplemarkersymbol or picturemarkersymbol
     	     defined for your point results NOT BOTH. picturemarkersymbol will override simplemarkersymbol
-    	     if you do not have it commented out. --> 
+    	     if you do not have it commented out. -->
     	<!--<simplemarkersymbol style="square" size="12" color="0xff0000" alpha="0.5" xoffset="0" yoffset="0" angle="0">
     		<outline style="solid" color="0x000000" alpha="1" width="1"/>
     	</simplemarkersymbol>-->
