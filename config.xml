@@ -36,7 +36,7 @@
 		url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml"
 		url="widgets/HeaderController/HeaderControllerWidget.swf"/>
-	<widget left="3" bottom="3" config="widgets/Coordinate/CoordinateWidget.xml" 
+	<widget left="3" bottom="3" config="widgets/Coordinate/CoordinateWidget.xml"
 		url="widgets/Coordinate/CoordinateWidget.swf"/>
 
    <map initialextent="-13213500 4072600 -13171800 4094200" fullextent="-13205319 4072406 -13176491 4095239" top="40">
@@ -55,9 +55,7 @@
 	 	<layer label="Planning" type="Dynamic" visible="false" alpha="0.7"
 				url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
 		<layer label="Parcels" type="dynamic" visible="true" alpha="1.0"
-				url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer">
-				<sublayer id="1" popupconfig="popups/PopUp_Parcels.xml"/>
-		</layer>
+        url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
 		<layer label="Misc" type="Dynamic" visible="false" alpha="0.7"
 				url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
 		<layer label="Hazard Zones" type="Dynamic" visible="false" alpha="0.7"
@@ -72,7 +70,7 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
-		<widget label="Enhanced Search" left="60" top="400" preload="open"
+		<widget label="Enhanced Search" left="80" top="200" preload="open"
 		                icon="assets/images/i_search.png"
 		                config="widgets/eSearch/SearchWidget.xml"
 		                url="widgets/eSearch/SearchWidget.swf"/>
@@ -80,10 +78,10 @@
 			icon="assets/images/i_target.png"
 			config="widgets/Locate/LocateWidget_trnl.xml"
 			url="widgets/Locate/LocateWidget.swf"/>
-		<widget label="Search" left="80" top="280"
+		<!--<widget label="Search" left="80" top="280"
                 icon="assets/images/i_search.png"
                 config="widgets/Search/SearchWidget_SC.xml"
-                url="widgets/Search/SearchWidget.swf"/>
+                url="widgets/Search/SearchWidget.swf"/>-->
 		<widget label="Legend" bottom="20" right="20"
                 icon="assets/images/Legend32.png"
                 config="widgets/Legend/LegendWidget.xml"
