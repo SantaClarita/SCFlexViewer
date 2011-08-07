@@ -1,13 +1,10 @@
 <?xml version="1.0" ?>
-<configuration label="Bookmarks (default)">
+<configuration>
     <bookmarks>
-        <bookmark name="Contiguous USA">-13934000 2699500 -8034300 6710900</bookmark>
-        <bookmark name="San Francisco">-13638000 4541000 -13632000 4551000</bookmark>
-        <bookmark name="Louisville, Kentucky">-9559973 4601704 -9529513 4621654</bookmark>
-        <bookmark name="Los Angeles">-13211400 3993400 -13119200 4056100</bookmark>
-        <bookmark name="Japan">13917200 3452300 16908700 5477600</bookmark>
-        <bookmark name="Lisbon">-1039800 4665500 -993700 4696800</bookmark>
-        <bookmark name="Chile">-8732266 -8111526 -6810170 -1859588</bookmark>
+		<bookmark name="Activity Center">-13191970 4083850 -13190670 4084530</bookmark>
+		<bookmark name="Central Park">-13193917 4087145 -13193266 4087483</bookmark>
+        <bookmark name="City Hall">-13197519 4084260 -13197193 4084429</bookmark>
+		<bookmark name="TMF">-13201300 4088200 -13198690 4089550</bookmark>
     </bookmarks>
 </configuration>
 
