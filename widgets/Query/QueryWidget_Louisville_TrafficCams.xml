@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<configuration>
+<configuration label="Louisville Traffic Cameras">
     <layer>http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_PublicSafety_Louisville/MapServer/2</layer>
     <titlefield>DESCRIPTION</titlefield>
     <linkfield>URL</linkfield>

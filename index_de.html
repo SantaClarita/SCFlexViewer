@@ -3,9 +3,9 @@
     <head>
         <title>ArcGIS Viewer for Flex</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="ESRI ArcGIS viewer for Flex"/>
-        <meta name="keywords" content="ESRI, ArcGIS, Flex Viewer"/>
-        <meta name="author" content="ESRI"/>
+        <meta name="description" content="Esri ArcGIS viewer for Flex"/>
+        <meta name="keywords" content="Esri, ArcGIS, Flex Viewer"/>
+        <meta name="author" content="Esri"/>
 
         <!-- Include CSS to eliminate any default margins/padding and set the height of the html element and
              the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as
@@ -27,6 +27,14 @@
         <script type="text/javascript" src="history/history.js"></script>
         <! END Browser History required section -->
 
+        <script type="text/javascript">
+            var isIElt9 = false;
+        </script>
+        <!--[if lt IE 9]>
+            <script type="text/javascript">
+                isIElt9 = true;
+            </script>
+        <![endif]-->
         <script type="text/javascript" src="swfobject.js"></script>
         <script type="text/javascript">
             <!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. -->
@@ -34,15 +42,15 @@
             <!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->
             var xiSwfUrlStr = "playerProductInstall.swf";
             var flashvars = {};
-            flashvars.localeChain = "de_DE,en_US";
+            flashvars.localeChain = "de_DE";
+            flashvars.resourceModuleURLs = "assets/locale/de_DE.swf";
             flashvars.config = "apps/de_DE/config.xml";
-            //Flex Viewer supported locales: en_US, de_DE, es_ES, fr_FR, ja_JP, zh_CN
             var params = {};
             params.quality = "high";
             params.bgcolor = "#ffffff";
             params.allowscriptaccess = "sameDomain";
             params.allowfullscreen = "true";
-            if (swfobject.ua.ie && swfobject.ua.win) // http://code.google.com/p/swfobject/wiki/api
+            if (isIElt9)
             {
                 params.wmode = "opaque"; // workaround for cursor issue - https://bugs.adobe.com/jira/browse/SDK-26818
             }

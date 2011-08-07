@@ -1,9 +1,7 @@
 <?xml version="1.0" ?>
 <configuration>
     <!-- geo, dms, mercator -->
-	<outputunit>geo</outputunit>
-	<numberformatter precision="6"/>
-	<label template="Latitude:{1}   Longitude:{0}"/>
+    <outputunit>geo</outputunit>
 </configuration>
 
 <!--

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<configuration>
+<configuration label="European Geocoding">
     <locator>http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Address_EU/GeocodeServer</locator>
     <minscore>40</minscore>
     <!-- by default every locator field is a text box, you can change one field to a dropdown

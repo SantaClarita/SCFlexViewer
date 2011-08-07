@@ -2,94 +2,75 @@
 <!--
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) 2010-2011 ESRI
-//
-// All rights reserved under the copyright laws of the United States.
-// You may freely redistribute and use this software, with or
-// without modification, provided you include the original copyright
-// and use restrictions.  See use restrictions in the file:
-// <install location>/License.txt
-//
-// Read more about ArcGIS Viewer for Flex 2.3 - http://links.esri.com/flexviewer
+// Read more about ArcGIS Viewer for Flex - http://links.esri.com/flexviewer
 //
 ////////////////////////////////////////////////////////////////////////////////
 -->
 <configuration>
-    <title>City of Santa Clarita</title>
-    <subtitle>GIS - Web Mapping Application</subtitle>
-    <logo>assets/images/city_seal.png</logo>
+    <title>ArcGIS Viewer for Flex</title>
+    <subtitle>a configurable web mapping application</subtitle>
+    <logo>assets/images/logo.png</logo>
     <style>
-    	<colors>0xCEE7F4,0x39628C,0x355D89,0x294867,0xCEE7F4</colors>
-    	<alpha>0.8</alpha>
+        <colors>0xFFFFFF,0x333333,0x101010,0x000000,0xFFD700</colors>
+        <alpha>0.8</alpha>
     </style>
     <!-- replace the following url with your own geometryservice -->
-    <geometryservice url="http://eos2/ArcGIS/rest/services/Geometry/GeometryServer" />
-    <!-- replace the following key with your own Bing key -->
-    <bing key="Ahw1due6dkmZg98wUJJYLrVmYlDik4oleCg6hoNqx6l2jFYRToImQH1HfH-asjjH"/>
+    <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
 
     <!-- UI elements -->
-    <widget left="10"  top="50"    config="widgets/Navigation/NavigationWidget.xml"
-		url="widgets/Navigation/NavigationWidget.swf"/>
-    <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml"
-		url="widgets/OverviewMap/OverviewMapWidget.swf"/>
-    <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml"
-		url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
-    <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml"
-		url="widgets/HeaderController/HeaderControllerWidget.swf"/>
-	<widget left="3" bottom="3" config="widgets/Coordinate/CoordinateWidget.xml"
-		url="widgets/Coordinate/CoordinateWidget.swf"/>
+    <widget left="10"  top="50"    config="widgets/Navigation/NavigationWidget.xml" url="widgets/Navigation/NavigationWidget.swf"/>
+    <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/>
+    <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
+    <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf"/>
 
-   <map initialextent="-13213500 4072600 -13171800 4094200" fullextent="-13205319 4072406 -13176491 4095239" top="40">
-   		<basemaps>
-			<layer label="Streets" type="tiled" visible="true" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
-			<layer label="Aerial" type="tiled" visible="false" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
-		</basemaps>
-
-	    <operationallayers>
-		<layer label="Topographic" type="dynamic" visible="false" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
-		<layer label="Public Works" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
-	 	<layer label="Planning" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
-		<layer label="Parcels" type="dynamic" visible="true" alpha="1.0"
-        url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
-		<layer label="Misc" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
-		<layer label="Hazard Zones" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
-		<layer label="FIS" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
-		<layer label="Administrative" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
-	    </operationallayers>
+    <map wraparound180="true" initialextent="-14083000 3139000 -10879000 5458000" fullextent="-20000000 -20000000 20000000 20000000" top="40">
+        <basemaps>
+            <layer label="Streets" type="tiled" visible="true"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"/>
+            <layer label="Aerial"  type="tiled" visible="false"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
+            <layer label="Topo"    type="tiled" visible="false"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
+        </basemaps>
+        <operationallayers>
+            <layer label="Demographics" type="tiled" visible="false" alpha="0.5"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Median_Household_Income/MapServer">
+                <sublayer id="1" popupconfig="popups/PopUp_Demographics_BlockGroups.xml"/>
+                <sublayer id="2" popupconfig="popups/PopUp_Demographics_Tracts.xml"/>
+                <sublayer id="3" popupconfig="popups/PopUp_Demographics_Counties.xml"/>
+                <sublayer id="4" popupconfig="popups/PopUp_Demographics_States.xml"/>
+            </layer>
+            <layer label="Boundaries and Places" type="tiled" visible="false"
+                   url="http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places_Alternate/MapServer"/>
+            <layer label="Fires" type="feature" visible="false" alpha="1.0"
+                   popupconfig="popups/PopUp_Fires.xml"
+                   url="http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Fire/Sheep/FeatureServer/0"/>
+        </operationallayers>
     </map>
 
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
-		<widget label="Search" left="80" top="200" preload="open"
-            icon="assets/images/i_search.png"
-            config="widgets/eSearch/SearchWidget.xml"
-		        url="widgets/eSearch/SearchWidget.swf"/>
-		<widget label="Find by intersection" left="140" top="90"
-			icon="assets/images/i_target.png"
-			config="widgets/Locate/LocateWidget_trnl.xml"
-			url="widgets/Locate/LocateWidget.swf"/>
-		<!--<widget label="Search" left="80" top="280"
-                icon="assets/images/i_search.png"
-                config="widgets/Search/SearchWidget_SC.xml"
-                url="widgets/Search/SearchWidget.swf"/>-->
-		<widget label="Legend" bottom="20" right="20"
-                icon="assets/images/Legend32.png"
-                config="widgets/Legend/LegendWidget.xml"
-                url="widgets/Legend/LegendWidget.swf"/>
-		<widget label="Bookmarks" left="430" top="90"
+        <widget label="Bookmarks"         left="430" top="90"
                 icon="assets/images/i_bookmark.png"
                 config="widgets/Bookmark/BookmarkWidget.xml"
                 url="widgets/Bookmark/BookmarkWidget.swf"/>
+        <widget label="Find an address"   left="100" top="90" preload="open"
+                icon="assets/images/i_target.png"
+                config="widgets/Locate/LocateWidget_World.xml"
+                url="widgets/Locate/LocateWidget.swf"/>
+        <widget label="Louisville Police" left="590" top="280"
+                icon="assets/images/i_police.png"
+                config="widgets/Query/QueryWidget_Louisville_PoliceStations.xml"
+                url="widgets/Query/QueryWidget.swf"/>
+        <widget label="Search" left="80" top="280"
+                icon="assets/images/i_search.png"
+                config="widgets/Search/SearchWidget_Louisville.xml"
+                url="widgets/Search/SearchWidget.swf"/>
+        <widget label="Earthquakes (GeoRSS)" left="410" top="280"
+                icon="assets/images/i_rss.png"
+                config="widgets/GeoRSS/GeoRSSWidget.xml"
+                url="widgets/GeoRSS/GeoRSSWidget.swf"/>
         <widget label="Draw and Measure" left="60" top="400"
                 icon="assets/images/i_draw2.png"
                 config="widgets/Draw/DrawWidget.xml"
@@ -98,5 +79,13 @@
                 icon="assets/images/i_print.png"
                 config="widgets/Print/PrintWidget.xml"
                 url="widgets/Print/PrintWidget.swf"/>
+
+        <!--
+        <widget label="My first widget"
+                icon="assets/images/i_widget.png"
+                config="widgets/Samples/HelloWorld/HelloWorldWidget.xml"
+                url="widgets/Samples/HelloWorld/HelloWorldWidget.swf"/>
+        -->
     </widgetcontainer>
+
 </configuration>

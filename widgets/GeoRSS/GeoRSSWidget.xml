@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
-<configuration>
-    <source>http://earthquake.usgs.gov/eqcenter/catalogs/eqs7day-M5.xml</source>
+<configuration label="Large Earthquakes (last 7 days)">
+    <source>http://earthquake.usgs.gov/earthquakes/catalogs/eqs7day-M5.xml</source>
     <fields>
         <field name="description" alias="Date"/>
     </fields>

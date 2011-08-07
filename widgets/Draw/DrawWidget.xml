@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<configuration>
+<configuration label="Draw and measure">
     <distanceunits>
         <distanceunit abbr="km" conversion=".001">Kilometers</distanceunit>
         <distanceunit abbr="mi" conversion="0.000621">Miles</distanceunit>

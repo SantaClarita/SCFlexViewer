@@ -9,7 +9,7 @@
     <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
 
     <widget right="-2" bottom="-2"
-            config="../samples/overviewmap_open.xml"
+            config="../apps/overviewmap_open.xml"
             url="widgets/OverviewMap/OverviewMapWidget.swf"/>
     <widget right="20" top="55" config="widgets/MapSwitcher/MapSwitcherWidget.xml"
             url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<configuration>
+<configuration label="Louisville Police Stations">
     <layer>http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Louisville/LOJIC_PublicSafety_Louisville/MapServer/3</layer>
     <titlefield>PD_NAME</titlefield>
     <fields all="false">

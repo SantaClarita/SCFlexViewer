@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<configuration>
+<configuration label="Earthquakes (last 7 days)">
     <layer>http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Earthquakes/EarthquakesFromLastSevenDays/MapServer/0</layer>
     <query>magnitude&gt;3</query>
     <titlefield>magnitude</titlefield>

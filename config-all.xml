@@ -2,15 +2,7 @@
 <!--
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) 2010-2011 ESRI
-//
-// All rights reserved under the copyright laws of the United States.
-// You may freely redistribute and use this software, with or
-// without modification, provided you include the original copyright
-// and use restrictions.  See use restrictions in the file:
-// <install location>/License.txt
-//
-// Read more about ArcGIS Viewer for Flex 2.3 - http://links.esri.com/flexviewer
+// Read more about ArcGIS Viewer for Flex - http://links.esri.com/flexviewer
 //
 ////////////////////////////////////////////////////////////////////////////////
 -->
@@ -23,8 +15,6 @@
     </style>
     <!-- replace the following url with your own geometryservice -->
     <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer" />
-    <!-- replace the following key with your own Bing key -->
-    <bing key="Ahw1due6dkmZg98wUJJYLrVmYlDik4oleCg6hoNqx6l2jFYRToImQH1HfH-asjjH"/>
 
     <splashpage label="ArcGIS Viewer for Flex" config="widgets/Splash/SplashWidget.xml" url="widgets/Splash/SplashWidget.swf"/>
 
@@ -92,7 +82,37 @@
             config="widgets/Legend/LegendWidget.xml"
             icon="assets/images/Legend32.png"
             url="widgets/Legend/LegendWidget.swf"/>
+        <widgetgroup label="Geoprocessing tasks">
+        <widget label="Calculate viewshed"
+                config="widgets/Geoprocessing/GeoprocessingWidget_CalculateViewshed.xml"
+                icon="assets/images/i_options.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        <widget label="Drive times"
+                config="widgets/Geoprocessing/GeoprocessingWidget_DriveTimes.xml"
+                icon="assets/images/i_servicearea.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        <widget label="Extract Data"
+                config="widgets/Geoprocessing/GeoprocessingWidget_ExtractData.xml"
+                icon="assets/images/i_layers.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        <widget label="Message in a bottle"
+                config="widgets/Geoprocessing/GeoprocessingWidget_MessageInABottle.xml"
+                icon="assets/images/i_hydro.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        <widget label="Population summary"
+                config="widgets/Geoprocessing/GeoprocessingWidget_PopulationSummary.xml"
+                icon="assets/images/i_demographics.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        <widget label="Surface profile"
+                config="widgets/Geoprocessing/GeoprocessingWidget_SurfaceProfile.xml"
+                icon="assets/images/i_options.png"
+                url="widgets/Geoprocessing/GeoprocessingWidget.swf"/>
+        </widgetgroup>
         <widgetgroup label="Locators">
+            <widget label="Find anything anywhere"
+                icon="assets/images/i_target.png"
+                config="widgets/Locate/LocateWidget_World.xml"
+                url="widgets/Locate/LocateWidget.swf"/>
             <widget label="Find U.S. address"
                 icon="assets/images/i_target.png"
                 config="widgets/Locate/LocateWidget_US.xml"
@@ -108,10 +128,6 @@
             <widget label="Find places around the world"
                 icon="assets/images/i_flag.png"
                 config="widgets/Locate/LocateWidget_WorldGaz.xml"
-                url="widgets/Locate/LocateWidget.swf"/>
-            <widget label="Find places with Bing"
-                icon="assets/images/i_target.png"
-                config="widgets/Locate/LocateWidget_Bing.xml"
                 url="widgets/Locate/LocateWidget.swf"/>
         </widgetgroup>
         <widgetgroup label="More widgets">

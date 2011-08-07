@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<configuration>
+<configuration label="Bing Geocoding">
     <locator>bing</locator>
     <zoomscale>150000</zoomscale>
 </configuration>
