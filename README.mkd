@@ -1,12 +1,12 @@
 City of Santa Clarita Flex Viewer
 =======
 
-This is the viewer for the City of Santa Clarita
+This is the ArcGIS 10 Flex Viewer for the City of Santa Clarita
 
 Requirements
 ------------
-ArcGIS Viewer for Flex 2.3.1
-build date 2011-04-26
+ArcGIS Viewer for Flex 2.4
+build date 2011-07-28
 
 Documentation
 -------------
@@ -46,11 +46,11 @@ Submitting a Pull Request
 4. Add documentation for your feature or bug fix.
 5. Add specs for your feature or bug fix.
 6. Commit and push your changes.
-7. Submit a pull request. 
+7. Submit a pull request.
 
 Copyright
 ---------
 Copyright (c) 2011 City of Santa Clarita
 See [LICENSE](https://github.com/santaclarita/SCFlexViewer/blob/master/LICENSE.mkd) for details.
 
-Flex Viewer License agreement at [(http://www.esri.com/legal/pdfs/mla_e204_e300/english.pdf)]
+Flex Viewer License agreement at [http://www.esri.com/legal/pdfs/mla_e204_e300/english.pdf](http://www.esri.com/legal/pdfs/mla_e204_e300/english.pdf)
