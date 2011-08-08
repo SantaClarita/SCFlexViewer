@@ -35,8 +35,10 @@
     <widget right="20" top="55"    config="widgets/MapSwitcher/MapSwitcherWidget.xml"
 		url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="0"   top="0"     config="widgets/HeaderController/HeaderControllerWidget.xml"
-		url="widgets/HeaderController/HeaderControllerWidget.swf"/>
-	<widget left="3" bottom="3" config="widgets/Coordinate/CoordinateWidget.xml"
+      url="widgets/HeaderController/HeaderControllerWidget.swf"/>
+    <widget left="3" bottom="45" config="widgets/ExportMap/exportMap.xml"
+      url="widgets/ExportMap/exportMap.swf"/>
+	  <widget left="3" bottom="3" config="widgets/Coordinate/CoordinateWidget.xml"
 		url="widgets/Coordinate/CoordinateWidget.swf"/>
 
    <map initialextent="-13213500 4072600 -13171800 4094200" fullextent="-13205319 4072406 -13176491 4095239" top="40">

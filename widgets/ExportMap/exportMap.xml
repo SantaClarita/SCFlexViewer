@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<configuration>
+	<jpegquality>100</jpegquality>
+	<maplogovisible>false</maplogovisible>
+	<mapscalebarvisible>true</mapscalebarvisible>
+	<zoomslidervisible>false</zoomslidervisible>
+	<mapbackgroundcolor>0xffffff</mapbackgroundcolor>
+	<imageurl>widgets/ExportMap/assets/images/i_exportmap.png</imageurl>
+	<tooltip>Export Map</tooltip>
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!! USING FLASH PLAYER YOU CAN NOT SPECIFY THE OUTPUT LOCATION!!!!!!!!!!!!!!
+	!!!!!!!!!!!! JUST THE FILE NAME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<defaultexportfilename>myMap.jpg</defaultexportfilename>
+</configuration>
