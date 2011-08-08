@@ -10,7 +10,7 @@
 // and use restrictions.  See use restrictions in the file:
 // <install location>/License.txt
 //
-// Read more about ArcGIS Viewer for Flex 2.3 - http://links.esri.com/flexviewer
+// Read more about ArcGIS Viewer for Flex 2.4 - http://links.esri.com/flexviewer
 //
 ////////////////////////////////////////////////////////////////////////////////
 -->
@@ -70,33 +70,29 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
     <widgetcontainer layout="float">
-		<widget label="Search" left="80" top="200" preload="open"
-            icon="assets/images/i_search.png"
-            config="widgets/eSearch/SearchWidget.xml"
-		        url="widgets/eSearch/SearchWidget.swf"/>
-		<widget label="Find by intersection" left="140" top="90"
-			icon="assets/images/i_target.png"
-			config="widgets/Locate/LocateWidget_trnl.xml"
-			url="widgets/Locate/LocateWidget.swf"/>
-		<!--<widget label="Search" left="80" top="280"
-                icon="assets/images/i_search.png"
-                config="widgets/Search/SearchWidget_SC.xml"
-                url="widgets/Search/SearchWidget.swf"/>-->
-		<widget label="Legend" bottom="20" right="20"
-                icon="assets/images/Legend32.png"
-                config="widgets/Legend/LegendWidget.xml"
-                url="widgets/Legend/LegendWidget.swf"/>
-		<widget label="Bookmarks" left="430" top="90"
-                icon="assets/images/i_bookmark.png"
-                config="widgets/Bookmark/BookmarkWidget.xml"
-                url="widgets/Bookmark/BookmarkWidget.swf"/>
-        <widget label="Draw and Measure" left="60" top="400"
-                icon="assets/images/i_draw2.png"
-                config="widgets/Draw/DrawWidget.xml"
-                url="widgets/Draw/DrawWidget.swf"/>
-        <widget label="Print" left="390" top="400"
-                icon="assets/images/i_print.png"
-                config="widgets/Print/PrintWidget.xml"
-                url="widgets/Print/PrintWidget.swf"/>
+		  <widget label="Search" left="80" top="200" preload="open"
+          icon="assets/images/i_search.png"
+          config="widgets/eSearch/SearchWidget.xml"
+		      url="widgets/eSearch/SearchWidget.swf"/>
+		  <widget label="Find by intersection" left="140" top="90"
+          icon="assets/images/i_target.png"
+			    config="widgets/Locate/LocateWidget_trnl.xml"
+			    url="widgets/Locate/LocateWidget.swf"/>
+		  <widget label="Legend" bottom="20" right="20"
+          icon="assets/images/Legend32.png"
+          config="widgets/Legend/LegendWidget.xml"
+          url="widgets/Legend/LegendWidget.swf"/>
+		  <widget label="Bookmarks" left="430" top="90"
+          icon="assets/images/i_bookmark.png"
+          config="widgets/Bookmark/BookmarkWidget.xml"
+          url="widgets/Bookmark/BookmarkWidget.swf"/>
+      <widget label="Draw and Measure" left="60" top="400"
+          icon="assets/images/i_draw2.png"
+          config="widgets/Draw/DrawWidget.xml"
+          url="widgets/Draw/DrawWidget.swf"/>
+      <widget label="Print" left="390" top="400"
+          icon="assets/images/i_print.png"
+          config="widgets/Print/PrintWidget.xml"
+          url="widgets/Print/PrintWidget.swf"/>
     </widgetcontainer>
 </configuration>
