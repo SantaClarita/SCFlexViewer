@@ -9,7 +9,7 @@
       <definitionexpression></definitionexpression>
       <enableexport>true</enableexport>
       <name>Parcels</name>
-      <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+      <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
         <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]" field="AIN" usedomain="true">AIN like '[value]'</expression>
 			</expressions>
@@ -53,7 +53,7 @@
 			<definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Address</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
 				<expression alias="STREET_NO" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]" field="STREETNO" usedomain="true">STREETNO like '[value]'</expression>
 			</expressions>
@@ -97,7 +97,7 @@
 			<definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Owner</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
 				<expression alias="Owner" textsearchlabel="Search by Owner ... [ Example: Santa Clarita ]" field="OWNER" usedomain="true">OWNER like '[value]%'</expression>
 			</expressions>
@@ -142,7 +142,7 @@
 			<definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Tract</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
 				<expression alias="Tract" textsearchlabel="Search by Tract ... [ Example: 33746 or 337%]" field="TRACTNO" usedomain="true">TRACTNO like '[value]'</expression>
 			</expressions>
