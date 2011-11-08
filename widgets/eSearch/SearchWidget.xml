@@ -15,7 +15,7 @@
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>PARCELID</titlefield>
+			<titlefield>AIN</titlefield>
 			<fields all="false">
         <field name="OWNER" gridfield="true"/>
         <field name="ALLADD" gridfield="true"/>
@@ -59,7 +59,7 @@
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>PARCELID</titlefield>
+			<titlefield>STREET_NO</titlefield>
 			<fields all="false">
         <field name="OWNER" gridfield="true"/>
         <field name="ALLADD" gridfield="true"/>
