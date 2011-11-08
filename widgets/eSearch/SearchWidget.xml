@@ -1,24 +1,24 @@
 <?xml version="1.0" ?>
 <!--
-	See Enhanced Search Widget XML Configuration.pdf for deatiled explanation
+	See Enhanced Search Widget XML Configuration.pdf for detailed explanation
 -->
 
 <configuration>
   <layers>
     <layer>
       <definitionexpression></definitionexpression>
-      <enableexport>true</enableexport>
-      <name>Parcels</name>
+			<enableexport>true</enableexport>
+			<name>Parcels</name>
       <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
-        <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]" field="AIN" usedomain="true">AIN like '[value]'</expression>
+        <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]">AIN like '[value]'</expression>
 			</expressions>
-			<graphicalsearchlabel>Use one of the graphical search tools to select Parcel</graphicalsearchlabel>
+			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>APN</titlefield>
+			<titlefield>PARCELID</titlefield>
 			<fields all="false">
         <field name="OWNER" gridfield="true"/>
-				<field name="ALLADD" gridfield="true"/>
+        <field name="ALLADD" gridfield="true"/>
         <field name="SITEZIPCOD" gridfield="true"/>
         <field name="APN" gridfield="true"/>
         <field name="LUSE" gridfield="true"/>
@@ -45,24 +45,24 @@
         <field name="SEWERMAPBK" gridfield="true"/>
       </fields>
 			<linkfield></linkfield>
-			<icon isfield="false"></icon>
-			<zoomscale usegeometry="true"/>
-			<autoopendatagrid>true</autoopendatagrid>
-		</layer>
-		<layer>
+			<icon isfield="true"></icon>
+			<zoomscale usegeometry="true">40000</zoomscale>
+      <autoopendatagrid>true</autoopendatagrid>
+    </layer>
+	  <layer>
 			<definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Address</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+      <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
-				<expression alias="STREET_NO" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]" field="STREETNO" usedomain="true">STREETNO like '[value]'</expression>
+        <expression alias="STREET_NO" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]">ALLADD like '[value]'</expression>
 			</expressions>
-			<graphicalsearchlabel>Use one of the graphical search tools to select Address</graphicalsearchlabel>
+			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>ALLADD</titlefield>
+			<titlefield>PARCELID</titlefield>
 			<fields all="false">
         <field name="OWNER" gridfield="true"/>
-				<field name="ALLADD" gridfield="true"/>
+        <field name="ALLADD" gridfield="true"/>
         <field name="SITEZIPCOD" gridfield="true"/>
         <field name="APN" gridfield="true"/>
         <field name="LUSE" gridfield="true"/>
@@ -89,69 +89,24 @@
         <field name="SEWERMAPBK" gridfield="true"/>
       </fields>
 			<linkfield></linkfield>
-			<icon isfield="false"></icon>
-			<zoomscale usegeometry="true"/>
-			<autoopendatagrid>true</autoopendatagrid>
-		</layer>
-		<layer>
-			<definitionexpression></definitionexpression>
-			<enableexport>true</enableexport>
-			<name>Owner</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
-			<expressions>
-				<expression alias="Owner" textsearchlabel="Search by Owner ... [ Example: Santa Clarita ]" field="OWNER" usedomain="true">OWNER like '[value]%'</expression>
-			</expressions>
-			<graphicalsearchlabel>Use one of the graphical search tools to select Address</graphicalsearchlabel>
-			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>OWNER</titlefield>
+			<icon isfield="true"></icon>
+			<zoomscale usegeometry="true">40000</zoomscale>
+      <autoopendatagrid>true</autoopendatagrid>
+    </layer>
+    <layer>
+      <definitionexpression></definitionexpression>
+      <enableexport>true</enableexport>
+      <name>Owner</name>
+        <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+      <expressions>
+        <expression alias="Owner" textsearchlabel="Search by Owner ... [ Example: Santa Clarita ]">OWNER like '[value]%'</expression>
+      </expressions>
+      <graphicalsearchlabel>Use one of the graphical search tools to select Address</graphicalsearchlabel>
+      <spatialsearchlayer>true</spatialsearchlayer>
+      <titlefield>OWNER</titlefield>
       <fields all="false">
         <field name="OWNER" gridfield="true"/>
-				<field name="ALLADD" gridfield="true"/>
-        <field name="SITEZIPCOD" gridfield="true"/>
-        <field name="APN" gridfield="true"/>
-        <field name="LUSE" gridfield="true"/>
-        <field name="TUNITS" gridfield="true"/>
-        <field name="LUSE" gridfield="true"/>
-        <field name="YEAR" gridfield="true"/>
-        <field name="TRACTNO" gridfield="true"/>
-        <field name="HOUSEMAP_" gridfield="true"/>
-        <field name="MAPBOOK_" gridfield="true"/>
-        <field name="XSTREET" gridfield="true"/>
-        <field name="JURIS" gridfield="true"/>
-        <field name="COUNTYAREA" gridfield="true"/>
-        <field name="COMP_DATE" gridfield="true"/>
-        <field name="WATER" gridfield="true"/>
-        <field name="OAK" gridfield="true"/>
-        <field name="EZONE" gridfield="true"/>
-        <field name="PROACTIVE" gridfield="true"/>
-        <field name="SSD" gridfield="true"/>
-        <field name="SCHOOL" gridfield="true"/>
-        <field name="BNT" gridfield="true"/>
-        <field name="ZONE_CODE" gridfield="true"/>
-        <field name="DISTRICT" gridfield="true"/>
-        <field name="FLOODZONE" gridfield="true"/>
-        <field name="SEWERMAPBK" gridfield="true"/>
-
-	    </fields>
-			<linkfield></linkfield>
-			<icon isfield="false"></icon>
-			<zoomscale usegeometry="true"/>
-			<autoopendatagrid>true</autoopendatagrid>
-		</layer>
-		<layer>
-			<definitionexpression></definitionexpression>
-			<enableexport>true</enableexport>
-			<name>Tract</name>
-	     	<url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
-			<expressions>
-				<expression alias="Tract" textsearchlabel="Search by Tract ... [ Example: 33746 or 337%]" field="TRACTNO" usedomain="true">TRACTNO like '[value]'</expression>
-			</expressions>
-			<graphicalsearchlabel>Use one of the graphical search tools to select Parcel</graphicalsearchlabel>
-			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>TRACTNO</titlefield>
-			 <fields all="false">
-        <field name="OWNER" gridfield="true"/>
-				<field name="ALLADD" gridfield="true"/>
+        <field name="ALLADD" gridfield="true"/>
         <field name="SITEZIPCOD" gridfield="true"/>
         <field name="APN" gridfield="true"/>
         <field name="LUSE" gridfield="true"/>
@@ -177,52 +132,56 @@
         <field name="FLOODZONE" gridfield="true"/>
         <field name="SEWERMAPBK" gridfield="true"/>
       </fields>
-			<linkfield></linkfield>
-			<icon isfield="false"></icon>
-			<zoomscale usegeometry="true"/>
-			<autoopendatagrid>true</autoopendatagrid>
-		</layer>
-
-		<!--<layer>
-			<definitionexpression></definitionexpression>
-			<name>Owner Parcels</name>
-			<enableexport>true</enableexport>
-			<url>http://gislap134/ArcGIS/rest/services/Join_Test/MapServer/0</url>
-			<expressions>
-				<expression alias="Parcel PPIN" textsearchlabel="Search Parcel by PPIN... [ Example: 1234 ]">Upper(parcels2.NAME) LIKE Upper('[value]%')</expression>
-			</expressions>
-			<graphicalsearchlabel>Use one of the graphical search tools to select Parcel</graphicalsearchlabel>
-			<spatialsearchlayer>true</spatialsearchlayer>
-			<titlefield>Objectid</titlefield>
-			<fields all="false">
-				<field name="parcels2.PPIN" gridfield="true" />
-				<field name="parcels2.NAME" gridfield="true" />
-				<field name="parcels2.STREET_ADDRESS" gridfield="true" />
-				<field name="parcels2.USE_CODE" gridfield="true" />
-				<field name="parcels2.CALC_ACRES" gridfield="true" />
-				<field name="parcels2.EXEMPTION_CODE1" gridfield="true" />
-				<field name="parcels2.ADDRESS_1" gridfield="true" gridfieldonly="true" />
-				<field name="parcels2.ADDRESS_3" gridfield="true" gridfieldonly="true" />
-				<field name="parcels2.PRIOR_TAX_YEAR" gridfield="true" />
-				<field name="parcels2.SALE_DATE" gridfield="true" dateformat="MM/DD/YYYY"/>
-				<field name="parcels2.LAST_DEED_BOOK" gridfield="true"/>
-				<field name="parcels2.LAST_DEED_PAGE" gridfield="true"/>
-				<field name="parcels2.ZIPCODE_1" gridfield="true" gridfieldonly="true"/>
-				<field name="parcels2.NEIGHBORHOOD" gridfield="true" gridfieldonly="true"/>
-				<field name="parcels2.SUBDIVISION" gridfield="true"/>
-				<field name="parcels2.SALE_PRICE" gridfield="true" currencyformat="$|2|,|." sum="true" sumlabel="Sales Price: "/>
-				<field name="parcels2.TOTAL_TRUE" gridfield="true" currencyformat="$|2|,|." />
-				<field name="parcels2.LAND_PRICE" gridfield="true" currencyformat="$|2|,|." />
-				<field name="parcels2.IMPR_PRICE" gridfield="true" currencyformat="$|2|,|." />
-				<field name="parcels2.ADJ_PRICE" gridfield="true" currencyformat="$|2|,|." />
-				<field name="parcels2.OVER_COND" alias="PAPA Website Link" hyperlinkgridfield="true" hyperlinkaliastext="Click here for document" linkprefix="http://someWebSite/aspx/web/details.aspx?p_entity=" linksuffix=""/>
-				<field name="ADJUSTMENT PRICE" gridfield="true"/>
-			</fields>
-			<linkfield linkprefix="http://someWebSite/aspx/web/details.aspx?p_entity=" linksuffix="">parcels2.OVER_COND</linkfield>
-			<icon isfield="true"></icon>
-			<zoomscale>5000</zoomscale>
-		</layer>-->
-	</layers>
+      <linkfield></linkfield>
+      <icon isfield="false"></icon>
+      <zoomscale usegeometry="true"/>
+      <autoopendatagrid>true</autoopendatagrid>
+    </layer>
+    <layer>
+      <definitionexpression></definitionexpression>
+      <enableexport>true</enableexport>
+      <name>Tract</name>
+        <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+      <expressions>
+        <expression alias="Tract" textsearchlabel="Search by Tract ... [ Example: 33746 or 337%]">TRACTNO like '[value]'</expression>
+      </expressions>
+      <graphicalsearchlabel>Use one of the graphical search tools to select Parcel</graphicalsearchlabel>
+      <spatialsearchlayer>true</spatialsearchlayer>
+      <titlefield>TRACTNO</titlefield>
+      <fields all="false">
+        <field name="OWNER" gridfield="true"/>
+        <field name="ALLADD" gridfield="true"/>
+        <field name="SITEZIPCOD" gridfield="true"/>
+        <field name="APN" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="TUNITS" gridfield="true"/>
+        <field name="LUSE" gridfield="true"/>
+        <field name="YEAR" gridfield="true"/>
+        <field name="TRACTNO" gridfield="true"/>
+        <field name="HOUSEMAP_" gridfield="true"/>
+        <field name="MAPBOOK_" gridfield="true"/>
+        <field name="XSTREET" gridfield="true"/>
+        <field name="JURIS" gridfield="true"/>
+        <field name="COUNTYAREA" gridfield="true"/>
+        <field name="COMP_DATE" gridfield="true"/>
+        <field name="WATER" gridfield="true"/>
+        <field name="OAK" gridfield="true"/>
+        <field name="EZONE" gridfield="true"/>
+        <field name="PROACTIVE" gridfield="true"/>
+        <field name="SSD" gridfield="true"/>
+        <field name="SCHOOL" gridfield="true"/>
+        <field name="BNT" gridfield="true"/>
+        <field name="ZONE_CODE" gridfield="true"/>
+        <field name="DISTRICT" gridfield="true"/>
+        <field name="FLOODZONE" gridfield="true"/>
+        <field name="SEWERMAPBK" gridfield="true"/>
+      </fields>
+      <linkfield></linkfield>
+      <icon isfield="false"></icon>
+      <zoomscale usegeometry="true"/>
+      <autoopendatagrid>true</autoopendatagrid>
+    </layer>
+  </layers>
 	<spatialrelationships>
 		<!-- possible spatial relationships
 			esriSpatialRelIntersects | esriSpatialRelContains | esriSpatialRelCrosses | esriSpatialRelEnvelopeIntersects | esriSpatialRelIndexIntersects | esriSpatialRelOverlaps | esriSpatialRelTouches | esriSpatialRelWithin
@@ -262,17 +221,17 @@
 		</bufferunit>
 	</bufferunits>
 	<tolerance>6</tolerance>
-	<spatialReference>102003</spatialReference>
+	<spatialreference>102003</spatialreference>
 	<zoomscale>2400</zoomscale>
-	<geometryservice>"http://eos2/ArcGIS/rest/services/Geometry/GeometryServer</geometryservice>
-	<csvSeparator>,</csvSeparator>
+	<geometryservice>http://eos2/ArcGIS/rest/services/Geometry/GeometryServer</geometryservice>
+	<csvseparator>,</csvseparator>
 	<toleranceforpointgraphicalselection>3</toleranceforpointgraphicalselection><!-- value is in screen pixels -->
 	<disablebuttons></disablebuttons><!--possible values one or more not all three search types comma sepearted text,graphic,spatial,grid -->
 	<defaultselectionoption>textInput</defaultselectionoption><!--possible values only one graphicalInput or textInput or spatialInput -->
 	<enabledrawgraphicbutton>true</enabledrawgraphicbutton>
 	<enablebuffergraphicbutton>true</enablebuffergraphicbutton>
 	<selectedgraphicaltool></selectedgraphicaltool><!-- possible values are extent or polygon or mappoint or polyline or nothing -->
-	<multipartgraphicsearch>false</multipartgraphicsearch>
+	<multipartgraphicsearch>true</multipartgraphicsearch>
 	<floatorfixed>float</floatorfixed><!-- possible values are fixed and float -->
 	<labels>
 		<addtolerance>Add search tolerance to point selection</addtolerance>
@@ -292,18 +251,20 @@
 		<clearlabel>Clear</clearlabel>
 		<loadinglabel>Loading...</loadinglabel>
 		<selectionlabel>Features Selected:</selectionlabel>
-		<gridresultsLabel>Show Results in Grid</gridresultsLabel>
+		<gridresultslabel>Show Results in Grid</gridresultslabel>
 		<csvdefaultname>Selected Records</csvdefaultname>
 		<exportbtnlabel>Export...</exportbtnlabel>
 		<export2csvoptionlabel>Export to CSV...</export2csvoptionlabel>
 		<export2txtoptionlabel>Export to Txt...</export2txtoptionlabel>
-		<bufferLabel>apply a search distance:</bufferLabel>
-		<spatialsearchLabel>Spatial search</spatialsearchLabel>
+		<bufferlabel>apply a search distance:</bufferlabel>
+		<spatialsearchlabel>Spatial search</spatialsearchlabel>
 		<applybufferlabel>Apply buffer</applybufferlabel>
 		<searchlayerlabel>Search entities of:</searchlayerlabel>
 		<enablemultipartsearch>enable multi-part graphics</enablemultipartsearch>
 		<zoomalllabel>Zoom</zoomalllabel>
 		<zoomalltip>Zoom to all results</zoomalltip>
+		<bufferalpha>Adjust buffer alpha</bufferalpha>
+		<buffercolor>Select buffer color</buffercolor>
 	</labels>
 	<symbols>
     	<simplefillsymbol color="0xff0000" alpha="0.5">
@@ -317,5 +278,5 @@
     	</simplemarkersymbol>-->
     	<picturemarkersymbol url="assets/images/i_search.png" height="30" width="30" xoffset="0" yoffset="0" />
 		<simplelinesymbol color="0xff0000" alpha="0.8" width="2"/>
-    </symbols>
+  </symbols>
 </configuration>
