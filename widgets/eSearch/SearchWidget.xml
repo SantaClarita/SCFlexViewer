@@ -55,7 +55,7 @@
 			<name>Address</name>
       <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
 			<expressions>
-        <expression alias="STREET_NO" textsearchlabel="Search by Street Number ... [ Example: 23920 or 239%]">ALLADD like '[value]'</expression>
+        <expression alias="STREET_NO" textsearchlabel="Search by Address ... [ Example: 23920 or 23920 Valencia]">ALLADD like '[value]%'</expression>
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
