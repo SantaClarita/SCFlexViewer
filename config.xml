@@ -23,7 +23,7 @@
     	<alpha>0.8</alpha>
     </style>
     <!-- replace the following url with your own geometryservice -->
-    <geometryservice url="http://eos2/ArcGIS/rest/services/Geometry/GeometryServer" />
+    <geometryservice url="http://phoebe/DefaultArcGIS/rest/services/Geometry/GeometryServer" />
     <!-- replace the following key with your own Bing key -->
     <bing key="Ahw1due6dkmZg98wUJJYLrVmYlDik4oleCg6hoNqx6l2jFYRToImQH1HfH-asjjH"/>
 
@@ -43,29 +43,29 @@
 
    <map initialextent="-13213500 4072600 -13171800 4094200" fullextent="-13205319 4072406 -13176491 4095239" top="40">
    		<basemaps>
-			<layer label="Streets" type="tiled" visible="true" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
-			<layer label="Aerial" type="tiled" visible="false" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
+			<layer label="Streets" type="dynamic" visible="true" alpha="1"
+				url="http://phoebe/DefaultArcGIS/rest/services/base_maps/AGS_base/MapServer"/>
+			<layer label="Aerial" type="Dynamic" visible="false" alpha="1"
+				url="http://phoebe/DefaultArcGIS/rest/services/base_maps/AGS_aerial/MapServer"/>
 		</basemaps>
 
 	    <operationallayers>
 		<layer label="Topographic" type="dynamic" visible="false" alpha="1"
-				url="http://eos2/ArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/base_maps/AGS_topo/MapServer"/>
 		<layer label="Public Works" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Public_Works/AGS_publicworks/MapServer"/>
 	 	<layer label="Planning" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Planning/AGS_planning/MapServer"/>
 		<layer label="Parcels" type="dynamic" visible="true" alpha="1.0"
-        url="http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
+        url="http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer"/>
 		<layer label="Misc" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Misc/AGS_misc/MapServer"/>
 		<layer label="Hazard Zones" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Misc/AGS_hazards/MapServer"/>
 		<layer label="FIS" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Misc/AGS_FIS/MapServer"/>
 		<layer label="Administrative" type="Dynamic" visible="false" alpha="0.7"
-				url="http://eos2/ArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
+				url="http://phoebe/DefaultArcGIS/rest/services/Administrative/AGS_administrative/MapServer"/>
 	    </operationallayers>
     </map>
 
