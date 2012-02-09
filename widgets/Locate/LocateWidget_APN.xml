@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <configuration>
-    <locator>http://eos2/ArcGIS/rest/services/Locators/Locator_apn/GeocodeServer</locator>
+    <locator>http://phoebe/DefaultArcGIS/rest/services/Locators/Locator_apn/GeocodeServer</locator>
     <minscore>40</minscore>
     <zoomscale>10000</zoomscale>
 </configuration>

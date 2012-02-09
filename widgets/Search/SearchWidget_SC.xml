@@ -3,7 +3,7 @@
     <layers>
         <layer>
             <name>Parcels</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+            <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
             <expression>AIN like '[value]'</expression>
             <textsearchlabel>Search by Parcel ID  [ Example: 2861026900 or 2861%]</textsearchlabel>
             <titlefield>AIN</titlefield>
@@ -15,7 +15,7 @@
     	</layer>
 		<layer>
             <name>Address</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+            <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
             <expression>STREETNO like '[value]'</expression>
             <textsearchlabel>Search by Street Number ... [ Example: 23920 or 239%]</textsearchlabel>
             <titlefield>STREETNO</titlefield>
@@ -26,7 +26,7 @@
         </layer>
 		<layer>
 	            <name>Owner</name>
-	            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+              <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
 	            <expression>OWNER like '[value]%'</expression>
 	            <textsearchlabel>Search by Owner ... [ Example: Santa Clarita ]</textsearchlabel>
 	            <titlefield>OWNER</titlefield>
@@ -38,7 +38,7 @@
 	    </layer>
 		<layer>
             <name>Tract Number</name>
-            <url>http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
+            <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1</url>
             <expression>TRACTNO like '[value]'</expression>
             <textsearchlabel>Search by Tract ... [ Example: 33746 or 337%]</textsearchlabel>
             <titlefield>TRACTNO</titlefield>

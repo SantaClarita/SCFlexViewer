@@ -2,21 +2,21 @@
 <configuration>
     <title>{AIN}</title>
     <fields>
-		<field name="OWNER" Alias="Owner" visible="true"/> 
+		<field name="OWNER" Alias="Owner" visible="true"/>
 		<field name="ALLADD" Alias="Address" visible="true"/>
 		<field name="SITEZIPCOD" visible="true"/>
 		<field name="APN" visible="true"/>
 		<field name="LUSE" Alias="Land Use (Per Assessor)" visible="true"/>
 		<field name="TUNITS" Alias="Total Units (Per Assessor)" visible="true"/>
-	    <field name="YEAR" Alias="Year Built (Per Accessor)" visible="true"/>
+	  <field name="YEAR" Alias="Year Built (Per Accessor)" visible="true"/>
 		<field name="TRACTNO" Alias="Tract" visible="true"/>
 		<field name="HOUSEMAP_" Alias="House Numbering Map"visible="true"/>
 		<field name="MAPBOOK_" Alias="Thomas Map Book" visible="true"/>
 		<field name="XSTREET" Alias="Cross Street" visible="true"/>
 		<field name="JURIS" Alias="Jurisdiction" visible="true"/>
-		<field name="COUNTYAREA" Alias="County Area" visible="true"/> 
+		<field name="COUNTYAREA" Alias="County Area" visible="true"/>
 		<field name="COMP_DATE" Alias="Annexation Date" visible="true"/>
-		<field name="WATER" Alias="Water Purveyor" visible="true"/> 
+		<field name="WATER" Alias="Water Purveyor" visible="true"/>
 		<field name="OAK" Alias="Oak Trees on Property?" visible="true"/>
 		<field name="EZONE" Alias="Enterprise Zone" visible="true"/>
 		<field name="PROACTIVE" Alias="Proactive Enforcement" visible="true"/>
@@ -24,7 +24,7 @@
 		<field name="SCHOOL" Alias="Within 1000ft of school" visible="true"/>
 		<field name="BTDISTRICT" Alias="B&T District" visible="true"/>
 		<field name="ZONING" Alias="Zoning" visible="true"/>
-		<field name="FLOODZONE"  Alias="Flood Zone" visible="true"/> 
+		<field name="FLOODZONE"  Alias="Flood Zone" visible="true"/>
 		<field name="SEWERMAPBK" Alias="Sewer Map Book" visible="true"/>
 		<field name="DISTRICT" visible="true"/><field name="LOTNO" visible="true"/>
 		<field name="PARENT" visible="true"/>
@@ -37,7 +37,7 @@
 		<field name="GPCCODE" visible="true"/>
 		<field name="OVOV2" visible="true"/>
 		<field name="BNS" visible="true"/>
-		<field name="BNSSUB" visible="true"/> 
+		<field name="BNSSUB" visible="true"/>
 		<field name="BICD" visible="true"/>
 		<field name="CENSUS" visible="true"/>
 	</fields>
@@ -45,7 +45,7 @@
 
 <!--
     Pop-up configuration file for:
-    http://http://eos2/ArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1
+    http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/1
 
     See pop-up documentation at
     http://links.esri.com/flexviewer/popups
