@@ -9,9 +9,9 @@
       <definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Parcels</name>
-      <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+      <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/2</url>
 			<expressions>
-        <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]">AIN like '[value]'</expression>
+        <expression alias="Parcels" textsearchlabel="Search by Parcel [ Example: 2861026900 or 2861%]">PARNO like '[value]'</expression>
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
@@ -53,9 +53,9 @@
 			<definitionexpression></definitionexpression>
 			<enableexport>true</enableexport>
 			<name>Address</name>
-      <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+      <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/2</url>
 			<expressions>
-        <expression alias="STREET_NO" textsearchlabel="Search by Address ... [ Example: 23920 or 23920 Valencia]">ALLADD like '[value]%'</expression>
+        <expression alias="STREET_NO" textsearchlabel="Search by Address ... [ Example: 23920 or 23920 Valencia]">STNUM like '[value]%'</expression>
 			</expressions>
 			<graphicalsearchlabel>Use one of the graphical search tools to select parcels</graphicalsearchlabel>
 			<spatialsearchlayer>true</spatialsearchlayer>
@@ -97,7 +97,7 @@
       <definitionexpression></definitionexpression>
       <enableexport>true</enableexport>
       <name>Owner</name>
-        <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+        <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/2</url>
       <expressions>
         <expression alias="Owner" textsearchlabel="Search by Owner ... [ Example: Santa Clarita ]">OWNER like '[value]%'</expression>
       </expressions>
@@ -141,7 +141,7 @@
       <definitionexpression></definitionexpression>
       <enableexport>true</enableexport>
       <name>Tract</name>
-        <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/3</url>
+        <url>http://phoebe/DefaultArcGIS/rest/services/Parcel/AGS_parcel_bldg/MapServer/2</url>
       <expressions>
         <expression alias="Tract" textsearchlabel="Search by Tract ... [ Example: 33746 or 337%]">TRACTNO like '[value]'</expression>
       </expressions>
